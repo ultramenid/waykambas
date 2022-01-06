@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place this data between the <head> tags of your website -->
+    <meta name="title" content="{{$title}}"/>
+    <meta name="description" content="Save the remaining natural forest cover, including in concessions'" />
+    <meta name="news_keywords" content="ndpe, Auriga Nusantara, ndpe performance, NDPE Transparency Platform, ndpe indonesia" />
+    <meta name="geo.country" content="id" />
+    <meta http-equiv="content-language" content="ID-id" />
+    <meta name="geo.placename" content="Indonesia" />
+    <meta name="copyright" content="{{url()->full()}}">
+    <meta name="creation date" content="2021">
+    <meta name="keywords" content="ndpe, Auriga Nusantara, ndpe performance, NDPE Transparency Platform, ndpe indonesia">
+    <link rel="canonical" href="{{url()->full()}}"/>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NDPE Transparency Platform">
+    <meta name="googlebot-news" content="index, follow, follow" />
+    <meta name="googlebot" content="index, follow, follow" />
+    <meta name="coverage" content="NDPE Transparency Platform" >
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AURIGA_ID">
+    <meta name="twitter:title" content="{{$title}}">
+    <meta name="twitter:description" content="Save the remaining natural forest cover, including in concessions'">
+    <meta name="twitter:creator" content="@AURIGA_ID">
+    <meta name="twitter:url" content="{{url()->full()}}" />
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image"  content="{{asset('assets/NDPE.jpg')}}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{$title}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{url()->full()}}" />
+    <!-- Facebook image must be at least 600x315px -->
+    <meta property="og:image" content="{{asset('assets/NDPE.jpg')}}" />
+    <meta property="og:description" content="Save the remaining natural forest cover, including in concessions'" />
+    <meta property="og:site_name" content="{{$title}}" />
+    <meta property="article:tag" content="ndpe, Auriga Nusantara, ndpe performance, NDPE Transparency Platform, ndpe indonesia" />
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style>
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      }
+      .swiper-slide {
+        opacity: .25;
+      }
+      .swiper-slide-visible {
+        opacity: 1;
+      }
+</style>
+<body>
+    <!-- hero -->
+    <div class="relative " x-data="{hero: false}">
+        <!-- image -->
+        <div class="bg-black py-6" style="height: 80vh;">
+            <div class="max-w-7xl px-4 py-3  mx-auto relative ">
+                <!-- bahasa -->
+                <div class="flex justify-end">
+                    <div class="flex space-x-1 text-xs">
+                        <a href="#" class="font-bold text-white">Indonesia</a>
+                        <span class="border-r border-green-600"></span>
+                        <a href="#" class="text-white">English</a>
+                    </div>
+                </div>
+                <!-- nav -->
+                <div class=" justify-between items-center sm:flex hidden">
+                    <div class="flex space-x-4 items-center mb-2">
+                        <h1 class="text-4xl font-bold text-white mr-6">Rawa Kadut</h1>
+                        <a href="#" class="text-white">About</a>
+                        <a href="#" class="text-white">Restorasi</a>
+                        <a href="#" class="text-white">Resource</a>
+                        <a href="#" class="text-white">Event</a>
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <button class="bg-green-600 px-8  text-sm font-bold py-1 text-white hover:bg-white border border-green-600 hover:text-green-600">Donate</button>
+                    </div>
+                </div>
+        
+                <div class="relative " style="height: 30vh">
+                    <div class="absolute inset-x-0 sm:bottom-14 bottom-0 h-16 px-8 max-w-xl">
+                        <p class="text-white text-2xl">
+                            Auriga activity in Way Kambas National
+                            Park to restoring greenery to the park
+                            as well as re-creating a home for the
+                            endangered wildlife that lost their habitat
+                            due to illegal logging and annual forest fire.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div @click="hero =! hero" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
+            <a class="text-sm">i</a>
+        </div>
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-500 opacity-40" x-show="hero">
+            <div class="max-w-7xl mx-auto text-white flex items-center py-2 px-12 sm:text-normal text-sm">
+                Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+            </div>
+        </div> 
+        
+    </div>
+
+    <!-- event -->
+    <div x-data="{event: false}" class="sm:py-28 py-12 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
+        <div class="sm:w-1/2  w-full  px-4 relative">
+            <img src="eimg.png" alt="" class="w-full">
+            <div @click="event =! event" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
+                <a class="text-sm">i</a>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="event">
+                <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
+                    Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+                </div>
+            </div> 
+        </div>
+        <div class="sm:w-1/2 w-full px-4">
+            <a class="text-gray-500	font-bold">Event</a>
+            <h1 class="sm:text-4xl text-2xl font-semibold">Auriga activity in Way Kambas
+                National Park to restoring
+                greenery to the park as well
+                as re-creating a home for the
+                endangered wildlife that lost their
+                habitat due to illegal logging and
+                annual forest fire.</h1>
+            <p class="mt-4">Auriga activity in Way Kambas
+                National Park to restoring
+                greenery to the park as well
+                as re-creating a home for the
+                endangered wildlife that lost their
+                habitat due to illegal logging and
+                annual forest fire.</p>
+        </div>
+    </div>
+    
+    <!-- diary -->
+    <div class="max-w-5xl py-6 mx-auto px-4">
+        <h1 class="text-5xl text-gray-500  py-12">Green Diary</h1>
+        <div class=" border-b border-t border-gray-400 py-8">
+
+            <!-- item 1 -->
+            <div x-data="{ item1: false }" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">                
+                <div class="sm:w-1/2 w-full px-4">
+                    <h1 class="sm:text-4xl text-2xl font-semibold">Auriga activity in Way Kambas
+                        National Park to restoring
+                        greenery to the park fire.</h1>
+                    <p class="mt-4">Auriga activity in Way Kambas National Park to restoring
+                        greenery to the park as well as re-creating a home for
+                        the endangered wildlife.</p>
+                </div>
+                <div class="sm:w-1/2  w-full  px-4 relative">
+                    <img src="item1.png" alt="" class="w-full">
+                    <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
+                        <a class="text-sm">i</a>
+                    </div>
+                    <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item1">
+                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
+                            Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="border-b mt-12 mb-12 border-gray-400"></div>
+
+            <!-- item 2 -->
+            <div x-data="{item2: false}" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">                
+                <div class="sm:w-1/2  w-full  px-4 relative">
+                    <img src="item2.png" alt="" class="w-full">
+                    <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
+                        <a class="text-sm">i</a>
+                    </div>
+                    <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item2">
+                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
+                            Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+                        </div>
+                    </div> 
+                </div>
+                <div class="sm:w-1/2 w-full px-4">
+                    <h1 class="sm:text-4xl text-2xl font-semibold">Auriga activity in Way Kambas
+                        National Park to restoring
+                        greenery to the park fire.</h1>
+                    <p class="mt-4">Auriga activity in Way Kambas National Park to restoring
+                        greenery to the park as well as re-creating a home for
+                        the endangered wildlife.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="bg-stone-100 mt-12 py-12 w-full relative">
+        <div class="absolute inset-y-0 left-0 sm:top-30 top-40 z-10 flex items-center " >
+            <button id="prev"
+                 class=" bg-gray-800 -ml-2 opacity-50 lg:-ml-4 flex justify-center items-center sm:w-24 w-12 sm:h-24 h-12 shadow focus:outline-none">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left sm:w-12 w-6 sm:h-12 h-6 text-white"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+        
+        <div class="mx-auto max-w-7xl">
+            <h1 class="text-5xl text-gray-500  py-12 px-4">Feature Story</h1>
+            <div class="swiper-container overflow-visible">
+                <div class="swiper-wrapper" >
+                    <div class="swiper-slide flex items-center relative" >
+                        <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2077&q=80" alt="" class="object-cover aspect-video ">
+                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
+                            National Park to restoring
+                            greenery to the park fire.</p>
+                    </div>
+                    <div class="swiper-slide flex items-center  relative">
+                        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2077&q=80" alt="" class="object-cover aspect-video ">
+                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
+                            National Park to restoring
+                            greenery to the park fire.</p>
+                    </div>
+                    <div class="swiper-slide flex items-center relative">
+                        <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video ">
+                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
+                            National Park to restoring
+                            greenery to the park fire.</p>
+                    </div>
+                    <div class="swiper-slide flex items-center relative">
+                        <img src="https://images.unsplash.com/photo-1563994798145-aac79dece602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80" alt="" class="object-cover aspect-video ">
+                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
+                            National Park to restoring
+                            greenery to the park fire.</p>
+                    </div>
+                    <div class="swiper-slide flex items-center relative">
+                        <img src="https://images.unsplash.com/photo-1582292060813-09aef839c627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video ">
+                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
+                            National Park to restoring
+                            greenery to the park fire.</p>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 sm:top-30 top-40 z-10  items-center flex" >
+            <button  id="next"  class=" bg-gray-800 -mr-2 opacity-50 lg:-mr-4 flex justify-center items-center sm:w-24 w-12 sm:h-24 h-12  shadow focus:outline-none">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right sm:w-12 w-6 sm:h-12 h-6 text-white"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-black py-12">
+        <div class=" max-w-7xl px-4 mx-auto ">
+            <div class="flex sm:flex-row flex-col sm:space-x-4 space-x-0 space-y-2 sm:space-y-0 sm:items-center items-left mb-2">
+                <h1 class="text-4xl font-bold text-white mr-6 mb-4">Rawa Kadut</h1>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Restorasi</a>
+                <a href="#" class="text-white">Resource</a>
+                <a href="#" class="text-white">Event</a>
+            </div>
+            <p class="text-white text-xl mt-12 max-w-xl">Auriga activity in Way Kambas National Park to restoring
+                greenery to the park as well as re-creating a home for the
+                endangered wildlife that lost their habitat due to illegal
+                logging and annual forest fire.</p>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script>
+       // Swiper: Slider
+        new Swiper('.swiper-container', {
+            nextButton: '#next',
+            prevButton: '#prev',
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 20,
+            loop: true,
+            loopedSlides: 5,
+            watchSlidesVisibility: true,
+            breakpoints: {
+    
+                1028: {
+                    slidesPerView:1,
+                    spaceBetween: 10,
+                },
+                480: {
+                    slidesPerView:1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
