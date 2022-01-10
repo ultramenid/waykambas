@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place this data between the <head> tags of your website -->
-    <title>Index - Waykambas</title>
+    <title>SilviKulture - Waykambas</title>
     <meta name="title" content="Index - Waykambas"/>
     <meta name="description" content="Save the remaining natural forest cover, including in concessions'" />
     <meta name="news_keywords" content="ndpe, Auriga Nusantara, ndpe performance, NDPE Transparency Platform, ndpe indonesia" />
@@ -48,19 +48,6 @@
 
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<style>
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-      }
-      .swiper-slide {
-        opacity: .25;
-      }
-      .swiper-slide-visible {
-        opacity: 1;
-      }
-</style>
 <body>
     <!-- hero -->
     <div class="relative " x-data="{hero: false}">
@@ -153,140 +140,29 @@
         
     </div>
 
-    <!-- event -->
-    <div x-data="{event: false}" class="sm:py-28 py-12 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
-        <div class="sm:w-1/2  w-full  px-4 relative">
-            <img src="eimg.png" alt="" class="w-full">
-            <div @click="event =! event" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                <a class="text-sm">i</a>
-            </div>
-            <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="event">
-                <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                    Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
-                </div>
-            </div> 
-        </div>
-        <div class="sm:w-1/2 w-full px-4">
-            <a class="text-gray-500	font-bold">Event</a>
-            <p class="mb-6 text-sm"> Dec 14, 2020</p>
-            <h1 class="sm:text-4xl text-2xl font-semibold">Firebreaks maintenance</h1>
-            <p class="mt-4">Auriga activity in Way Kambas
-                National Park to restoring
-                greenery to the park as well
-                as re-creating a home for the
-                endangered wildlife that lost their
-                habitat due to illegal logging and
-                annual forest fire.</p>
-        </div>
+    <!-- content -->
+    <div class="flex flex-col space-y-6 max-w-7xl mx-auto sm:py-32 py-12 px-4">
+        <h1 class="sm:text-7xl text-5xl font-bold sm:mb-12 mb-4">Silvikulture</h1>
+        <p class="leading-relaxed">
+            Ada 4 kegiatan silvikultur utama pada kegiatan restorasi Rawa Kadut; persemaian, penanaman, pengayaan jenis, perawatan permudaan alami, perawatan pohon indukan, dan penanggulangan kebakaran dengan mengoptimalkan sekat bakar. </p>
+        <p class="leading-relaxed">
+            Persemaian bertujuan mempersiapkan bibit yang tangguh untuk kegiatan penanaman. Persemaian dilakukan di dalam kawasan restorasi dimana sumber bibit juga didapat dari hutan di sekitar kawasan restorasi yang merupakan vegetasi  asli Way Kambas. Bibit-bibit di persemaian  berasal dari biji, stek batang, dan cabutan.
+        </p>
+        <p class="leading-relaxed">
+            Penanaman dilakukan pada musim tanam yaitu awal musim penghujan. Beberapa uji coba jarak tanam dilakukan di lokasi rawa kadut, namun kedepan dipilih jarak tanam 10x10 meter, dengan catatan memastikan dalam per Ha area akan bertahan hidup minimal 100 batang pohon yang kemudian akan tumbuh menjadi pohon utama. Selain penanaman dari produksi bibit di persemaian, beberapa uji coba penanaman dengan translokasi dan sistem cangkok dilakukan di area restorasi. 
+        </p>
+        <p class="leading-relaxed">
+            Pengayaan jenis merupakan keharusan mengingat Rawa kadut sebagian  merupakan zona rimba. Kebakaran dengan intensitas tinggi juga telah mengakibatkan kawasan tersebut tidak memiliki kelimpahan jenis sebaik hutan-hutan yang berada di zona Inti. Area yang didominasi jenis-jenis pionir perlu pengayaan dengan berbagai jenis  famili  Dipterocarpaceae, Apocynaceae, Clusiaceae, dan Dilleniaceae.
+        </p>
+        <p class="leading-relaxed">
+            Perawatan permudaan alami merupakan prinsip dasar dari restorasi dimana restorasi adalah usaha mempercepat proses suksesi dengan memberi peran utama regenerasi alami  terjadi dengan maksimal. Melindungi kawasan dari ancaman kebakaran adalah salah satu usaha yang dilakukan dalam hal ini. Selain itu pohon-pohon yang dipilih sebagai pohon utama yang akan kemudian menjadi pohon induk akan dirawat dengan baik dimana pohon-pohon tersebut terbebas dari kerusakan terutama oleh kebakaran.
+        </p>
+        <p class="leading-relaxed">
+            Pada area restorasi Rawa Kadut pembuatan sekat bakar selain tujuan utama adalah untuk penanggulangan kebakaran, juga sebagai usaha untuk menjaga pohon-pohon tingkat semai hingga  pancang terhindar dari kerusakan yang disebabkan oleh rusa yang sangat banyak ditemukan di lokasi ini. Rusa selain memakan daun  biasanya akan  mengasah tanduk pada pancang-pancang yang mengakibatkan kerusakan dan sebagian mati karena terkelupas hingga kambiumnya. Kawanan Rusa biasanya akan berkumpul di sekat-sekat bakar karena rumputan di sekat bakar lebih muda, sehingga kerusakan tanaman pun terminimalisir.
+        </p>
     </div>
-    
-    <!-- diary -->
-    <div class="max-w-5xl py-6 mx-auto px-4">
-        <h1 class="text-5xl text-gray-500  py-12">Green Diary</h1>
-        <div class=" border-b border-t border-gray-400 py-8">
-
-            <!-- item 1 -->
-            <div x-data="{ item1: false }" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">                
-                <div class="sm:w-1/2 w-full px-4">
-                    <p class="mb-6 text-sm"> Dec 14, 2020</p>
-                    <h1 class="sm:text-4xl text-2xl font-semibold">Fire Control</h1>
-                    <p class="mt-4">As most remaining forests in Indonesia, Way Kambas National Park is also not immune to fires. Every year, the park suffers from conflagration and hazardously causes haze that affects local community living near the conservation area.</p>
-                </div>
-                <div class="sm:w-1/2  w-full  px-4 relative">
-                    <img src="https://waykambas.restorasi.earth/upload/feature/thumbnails/id/515a6996-79d7-4d37-86c4-23f87474dc3c.jpg" alt="" class="w-full">
-                    <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
-                        <a class="text-sm">i</a>
-                    </div>
-                    <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item1">
-                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                            Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="border-b mt-12 mb-12 border-gray-400"></div>
-
-            <!-- item 2 -->
-            <div x-data="{item2: false}" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">                
-                <div class="sm:w-1/2  w-full  px-4 relative">
-                    <img src="https://waykambas.restorasi.earth/upload/feature/thumbnails/id/f3ee3fe6-0b47-4263-88c2-0882bbe3d335.jpg" alt="" class="w-full">
-                    <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
-                        <a class="text-sm">i</a>
-                    </div>
-                    <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item2">
-                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                            Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
-                        </div>
-                    </div> 
-                </div>
-                <div class="sm:w-1/2 w-full px-4">
-                    <p class="mb-6 text-sm"> Dec 14, 2020</p>
-                    <h1 class="sm:text-4xl text-2xl font-semibold">A-Z Way Kambas Restoration</h1>
-                    <p class="mt-4">Auriga’s reforestation activity in Way Kambas National Park has been running since 2013. The program itself is an effort to bring back greenery to the park as well as re-creating a home for the endangered wildlife roaming surround the park, such as tiger, rhinoceros, and elephant, that lost their habitat due to illegal logging and annual forest fire.</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- slider -->
-    <div class="bg-stone-100 mt-12 py-12 w-full relative">
-        <div class="absolute inset-y-0 left-0 sm:top-30 top-40 z-10 flex items-center " >
-            <button id="prev"
-                 class=" bg-gray-800  opacity-50 lg:-ml-4 flex justify-center items-center sm:w-24 w-12 sm:h-24 h-12 shadow focus:outline-none">
-            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left sm:w-12 w-6 sm:h-12 h-6 text-white"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-            </button>
-        </div>
-        
-        <div class="mx-auto max-w-7xl">
-            <h1 class="text-5xl text-gray-500  py-12 px-4">Feature Story</h1>
-            <div class="swiper-container sm:overflow-visible overflow-hidden">
-                <div class="swiper-wrapper" >
-                    <div class="swiper-slide flex items-center relative" >
-                        <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2077&q=80" alt="" class="object-cover aspect-video ">
-                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
-                            National Park to restoring
-                            greenery to the park fire.</p>
-                    </div>
-                    <div class="swiper-slide flex items-center  relative">
-                        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2077&q=80" alt="" class="object-cover aspect-video ">
-                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
-                            National Park to restoring
-                            greenery to the park fire.</p>
-                    </div>
-                    <div class="swiper-slide flex items-center relative">
-                        <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video ">
-                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
-                            National Park to restoring
-                            greenery to the park fire.</p>
-                    </div>
-                    <div class="swiper-slide flex items-center relative">
-                        <img src="https://images.unsplash.com/photo-1563994798145-aac79dece602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80" alt="" class="object-cover aspect-video ">
-                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
-                            National Park to restoring
-                            greenery to the park fire.</p>
-                    </div>
-                    <div class="swiper-slide flex items-center relative">
-                        <img src="https://images.unsplash.com/photo-1582292060813-09aef839c627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video ">
-                        <p class="absolute sm:px-12 px-4 sm:py-0 py-4  max-w-xl sm:text-3xl text-xl font-semibold text-left">Auriga activity in Way Kambas
-                            National Park to restoring
-                            greenery to the park fire.</p>
-                    </div>
-                </div>
-               
-                
-            </div>
-        </div>
-        <div class="absolute inset-y-0 right-0 sm:top-30 top-40 z-10  items-center flex" >
-            <button  id="next"  class=" bg-gray-800 opacity-50 lg:-mr-4 flex justify-center items-center sm:w-24 w-12 sm:h-24 h-12  shadow focus:outline-none">
-            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right sm:w-12 w-6 sm:h-12 h-6 text-white"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <div class="bg-black py-12">
+     <!-- footer -->
+     <div class="bg-black py-12">
         <div class=" max-w-7xl px-4 mx-auto ">
             <div class="sm:flex hidden space-x-4 items-center mb-2 ">
                 <h1 class="text-4xl font-bold text-white mr-6"> <a href="index.html">Rawa Kadut</a> </h1>
@@ -341,30 +217,5 @@
         </div>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-    <script>
-       // Swiper: Slider
-        new Swiper('.swiper-container', {
-            nextButton: '#next',
-            prevButton: '#prev',
-            slidesPerView: 1,
-            centeredSlides: true,
-            spaceBetween: 20,
-            loop: true,
-            loopedSlides: 5,
-            watchSlidesVisibility: true,
-            breakpoints: {
-    
-                1028: {
-                    slidesPerView:1,
-                    spaceBetween: 10,
-                },
-                480: {
-                    slidesPerView:1,
-                    spaceBetween: 10,
-                }
-            }
-        });
-    </script>
 </body>
 </html>
